@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pizzafast</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav d-f">
+            <div class="nav-tel d-f justify-content-center">
+                <p class="text-header text-align-center media-one tel">+375 (00) 000 00 00</p>
+                <p class="text-align-center media-one tel">с 9:00 до 23:00</p>
+            </div>
+            <div class="nav-menu d-f media-d-n">
+                <div class="nav-menu-mobile d-f align-items-center">
+                    <ul class="d-f">
+                        <li>
+                            <a class="text-header media-one" href="index.html">Главная</a>
+                        </li>
+                        <li>
+                            <a class="text-header media-one" href="pizza.html">Пицца</a>
+                        </li>
+                        <li>
+                            <a class="text-header media-one" href="delpay.html">Доставка и оплата</a>
+                        </li>
+                        <li>
+                            <a class="text-header media-one" href="contact.html">Контакты</a>
+                        </li>
+                        <li>
+                            <a class="text-header media-one" href="basket.html">Корзина</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="basket-count text-align-center">
+                    <a href="basket.html"><img class="basket-icon" src="images/basket.png" alt=""></a>
+                    <span class="media-one"></span>
+                </div>
+            </div>
+            <!-- nav big screen version -->
+            <div class="menu-burger"></div>
+            <div class="menu-burger-list d-n">
+                <ul>
+                    <li>
+                        <a class="text-header" href="index.html">Главная</a>
+                    </li>
+                    <li>
+                        <a class="text-header" href="pizza.html">Пицца</a>
+                    </li>
+                    <li>
+                        <a class="text-header" href="delpay.html">Доставка и оплата</a>
+                    </li>
+                    <li>
+                        <a class="text-header" href="contact.html">Контакты</a>
+                    </li>
+                    <li>
+                        <a class="text-header" href="basket.html">Корзина</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- nav small screen version -->
+        </nav>
+    </header>
+    <!-- header -->
+    <main class="basket-main media-one media-two">
+        <div class="basket-container-one media-contact-container-one">
+            <p class="basket-empty text-header text-align-center"></p>
+            <ul class="list d-f justify-content-center media-two media-list-w media-list"></ul>
+        </div>
+        <div class="order-container d-f media-order-w media-order-w-two">
+            <div class="order-container-info">
+                <p>Имя</p>
+                <p><input type="text"></p>
+                <p>Адрес</p>
+                <p><input type="text"></p>
+                <p>Телефон +375</p>
+                <p><input type="number"></p>
+                <p class="order-message"></p>
+            </div>
+            <p class="empty-message text-align-center"></p>
+            <button class="place-order">Оформить заказ</button>
+            <div class="container-place d-n">
+                <div class="container-place-end d-f align-items-center media-place-end-one media-place-end-two">
+                    <div class="text-align-center">
+                        <img src="images/check.png" alt="">
+                        <p>Заказ принят</p>
+                    </div>
+                    <button class="place-ok">OK</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- basket-main -->
+    <footer class="footer media-one media-two">
+        <p class="text-align-center">Сайт сервиса доставки пиццы</p>
+        <address>ⒸDzmitry Peryshch, 2022. ✉ dzmiter2105@mail.ru, dzmiter2105@gmail.com.</address>
+    </footer>
+    <!-- footer -->
+    <script src="js/script.js"></script>
+    <script src="js/pop-up.js"></script>
+    <script src="js/basket.js"></script>
+</body>
+</html>

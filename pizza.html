@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pizzafast</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav d-f">
+            <div class="nav-tel d-f justify-content-center">
+                <p class="text-header text-align-center media-one tel">+375 (00) 000 00 00</p>
+                <p class="text-align-center media-one tel">с 9:00 до 23:00</p>
+            </div>
+            <div class="nav-menu d-f media-d-n">
+                <div class="nav-menu-mobile d-f align-items-center">
+                    <ul class="d-f">
+                        <li>
+                            <a class="text-header media-one" href="index.html">Главная</a>
+                        </li>
+                        <li>
+                            <a class="text-header media-one" href="pizza.html">Пицца</a>
+                        </li>
+                        <li>
+                            <a class="text-header media-one" href="delpay.html">Доставка и оплата</a>
+                        </li>
+                        <li>
+                            <a class="text-header media-one" href="contact.html">Контакты</a>
+                        </li>
+                        <li>
+                            <a class="text-header media-one" href="basket.html">Корзина</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="basket-count text-align-center">
+                    <a href="basket.html"><img class="basket-icon" src="images/basket.png" alt=""></a>
+                    <span class="media-one"></span>
+                </div>
+            </div>
+            <!-- nav big screen version -->
+            <div class="menu-burger"></div>
+            <div class="menu-burger-list d-n">
+                <ul>
+                    <li>
+                        <a class="text-header" href="index.html">Главная</a>
+                    </li>
+                    <li>
+                        <a class="text-header" href="pizza.html">Пицца</a>
+                    </li>
+                    <li>
+                        <a class="text-header" href="delpay.html">Доставка и оплата</a>
+                    </li>
+                    <li>
+                        <a class="text-header" href="contact.html">Контакты</a>
+                    </li>
+                    <li>
+                        <a class="text-header" href="basket.html">Корзина</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- nav small screen version -->
+        </nav>
+    </header>
+    <!-- header -->
+    <main class="pizza-main">
+        <div class="choose-card d-n">
+            <button class="close-card media-close-card"></button>
+            <div class="choose-info media-card media-choose-info">
+                <p class="text-header text-align-center"></p>
+                <img src="#" alt="barbecue">
+                <span>Размеры</span><select>
+                    <option value="25">25 см</option>
+                    <option value="30">30 см</option>
+                    <option value="35">35 см</option>
+                </select>
+                <span class="margin-left-1">Количество</span>
+                <button class="minus">-</button>
+                <span class="margin-left-1">1</span>
+                <button class="plus">+</button>
+                <p>Цена: <span>10</span>руб.</p>
+                <button class="buy" data-p="one">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="pizza-container-one d-f media-one media-pizza-container-one">
+            <div class="media-two d-f flex-0-1-50">
+                <div class="card media-card" data-p="one">
+                    <p class="text-header text-align-center">Барбекю</p>
+                    <img src="images/pizza/barbecue.jpg" alt="barbecue">
+                    <p class="info-pizza media-info-pizza">Пицца соус, сыр "Моцарелла", говядина, шампиньоны, курица, лук, соус BBQ</p>
+                    <div class="card-button d-f align-items-center">
+                        <p>Цена: от <span>10</span> руб.</p>
+                        <button class="choose" data-p="one">Выбрать</button>
+                    </div>
+                </div>
+                <div class="card media-card" data-p="two">
+                    <p class="text-header text-align-center">Четыре сыра</p>
+                    <img src="images/pizza/fourcheeses.jpg" alt="four cheeses">
+                    <p class="info-pizza media-info-pizza">Белый соус, сыр "Моцарелла", сыр "Фета", сыр "Пармезан", сыр "Сулугуни"</p>
+                    <div class="card-button d-f align-items-center">
+                        <p>Цена: от <span>12</span> руб.</p>
+                        <button class="choose" data-p="two">Выбрать</button>
+                    </div>
+                </div>
+            </div>
+            <div class="media-two d-f flex-0-1-50">
+                <div class="card media-card" data-p="three">
+                    <p class="text-header text-align-center">Куриная</p>
+                    <img src="images/pizza/chicken.jpg" alt="chicken">
+                    <p class="info-pizza media-info-pizza">Белый соус, сыр "Моцарелла", куриное филе, шампиньоны, помидор</p>
+                    <div class="card-button d-f align-items-center">
+                        <p>Цена: от <span>11</span> руб.</p>
+                        <button class="choose" data-p="three">Выбрать</button>
+                    </div>
+                </div>
+                <div class="card media-card" data-p="four">
+                    <p class="text-header text-align-center">Италия</p>
+                    <img src="images/pizza/italian.jpg" alt="italian">
+                    <p class="info-pizza media-info-pizza">Пицца соус, сыр "Моцарелла", карбонад, ветчина, пепперони, маслины</p>
+                    <div class="card-button d-f align-items-center">
+                        <p>Цена: от <span>13</span> руб.</p>
+                        <button class="choose" data-p="four">Выбрать</button>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        <!-- pizza-container-one -->
+        <div class="pizza-container-two d-f media-one">
+            <div class="media-two d-f flex-0-1-50">
+                <div class="card media-card" data-p="five">
+                    <p class="text-header text-align-center">Веджи</p>
+                    <img src="images/pizza/viji.jpg" alt="viji">
+                    <p class="info-pizza media-info-pizza">Пицца соус, сыр "Моцарелла", маслины, болгарский перец, помидор, шампиньоны, сыр "Фета", орегано</p>
+                    <div class="card-button d-f align-items-center">
+                        <p>Цена: от <span>12</span> руб.</p>
+                        <button class="choose" data-p="five">Выбрать</button>
+                    </div>
+                </div>
+                <div class="card media-card" data-p="six">
+                    <p class="text-header text-align-center">Салями</p>
+                    <img src="images/pizza/salami.jpg" alt="salami">
+                    <p class="info-pizza media-info-pizza">Пицца соус, сыр "Моцарелла", пепперони, салями, шампиньоны</p>
+                    <div class="card-button d-f align-items-center">
+                        <p>Цена: от <span>10</span> руб.</p>
+                        <button class="choose" data-p="six">Выбрать</button>
+                    </div>
+                </div>
+            </div>
+            <div class="media-two d-f flex-0-1-50">
+                <div class="card media-card" data-p="seven">
+                    <p class="text-header text-align-center">Баварская</p>
+                    <img src="images/pizza/bavarian.jpg" alt="bavarian">
+                    <p class="info-pizza media-info-pizza">Пицца соус, сыр "Моцарелла", карбонад, красный лук, салями, огурцы</p>
+                    <div class="card-button d-f align-items-center">
+                        <p>Цена: от <span>11</span> руб.</p>
+                        <button class="choose" data-p="seven">Выбрать</button>
+                    </div>
+                </div>
+                <div class="card media-card" data-p="eight">
+                    <p class="text-header text-align-center">Маргарита</p>
+                    <img src="images/pizza/margaret.jpg" alt="margaret">
+                    <p class="info-pizza media-info-pizza">Пицца соус, сыр "Моцарелла", помидор, орегано</p>
+                    <div class="card-button d-f align-items-center">
+                        <p>Цена: от <span>9</span> руб.</p>
+                        <button class="choose" data-p="eight">Выбрать</button>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <!-- pizza-container-two -->
+        <div class="pizza-container-three d-f media-one">
+            <div class="media-two d-f flex-0-1-50">
+                <div class="card media-card" data-p="nine">
+                    <p class="text-header text-align-center">Сальса</p>
+                    <img src="images/pizza/salsa.jpg" alt="salsa">
+                    <p class="info-pizza media-info-pizza">Пицца соус, сыр "Моцарелла", шампиньоны, пепперони, соус сальса, красный острый перец</p>
+                    <div class="card-button d-f align-items-center">
+                        <p>Цена: от <span>9</span> руб.</p>
+                        <button class="choose" data-p="nine">Выбрать</button>
+                    </div>
+                </div>
+                <div class="card media-card" data-p="ten">
+                    <p class="text-header text-align-center">Пепперони</p>
+                    <img src="images/pizza/pepperoni.jpg" alt="pepperoni">
+                    <p class="info-pizza media-info-pizza">Пицца соус, сыр "Моцарелла", пепперон</p>
+                    <div class="card-button d-f align-items-center">
+                        <p>Цена: от <span>10</span> руб.</p>
+                        <button class="choose" data-p="ten">Выбрать</button>
+                    </div>
+                </div>
+            </div>
+            <div class="media-two d-f flex-0-1-50">
+                <div class="card media-card" data-p="eleven">
+                    <p class="text-header text-align-center">Цезарь</p>
+                    <img src="images/pizza/caesar.jpg" alt="caesar">
+                    <p class="info-pizza media-info-pizza">Белый соус, сыр "Моцарелла", сыр "Пармезан", салат айсберг, помидор, маслины, куриное филе</p>
+                    <div class="card-button d-f align-items-center">
+                        <p>Цена: от <span>12</span> руб.</p>
+                        <button class="choose" data-p="eleven">Выбрать</button>
+                    </div>
+                </div>
+                <div class="card media-card" data-p="twelve">
+                    <p class="text-header text-align-center">Классика</p>
+                    <img src="images/pizza/classic.jpg" alt="classic">
+                    <p class="info-pizza media-info-pizza">Пицца соус, сыр "Моцарелла", шампиньоны, ветчина, пепперони</p>
+                    <div class="card-button d-f align-items-center">
+                        <p>Цена: от <span>11</span> руб.</p>
+                        <button class="choose" data-p="twelve">Выбрать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- pizza-container-three -->
+        <div class="pizza-container-four d-f media-one">
+            <div class="media-two d-f flex-0-1-50">
+                <div class="card media-card" data-p="thirteen">
+                    <p class="text-header text-align-center">Мясная</p>
+                    <img src="images/pizza/meat.jpg" alt="meat">
+                    <p class="info-pizza media-info-pizza">Пицца соус, сыр "Моцарелла", куриное филе, пепперони, ветчина, бекон, помидор</p>
+                    <div class="card-button d-f align-items-center">
+                        <p>Цена: от <span>14</span> руб.</p>
+                        <button class="choose" data-p="thirteen">Выбрать</button>
+                    </div>
+                </div>
+                <div class="card media-card" data-p="fourteen">
+                    <p class="text-header text-align-center">Курица грибы</p>
+                    <img src="images/pizza/chicken-mushrooms.jpg" alt="chicken mushrooms">
+                    <p class="info-pizza media-info-pizza">Пицца соус, сыр "Моцарелла", курица, шампиньоны, пармезан, орегано</p>
+                    <div class="card-button d-f align-items-center">
+                        <p>Цена: от <span>12</span> руб.</p>
+                        <button class="choose" data-p="fourteen">Выбрать</button>
+                    </div>
+                </div>
+            </div>
+            <div class="media-two d-f flex-0-1-50">
+                <div class="card media-card" data-p="fifteen">
+                    <p class="text-header text-align-center">Гамбургер</p>
+                    <img src="images/pizza/hamburger.jpg" alt="hamburger">
+                    <p class="info-pizza media-info-pizza">Пицца соус, сыр "Моцарелла", говядина, лук, огурцы, горчичный соус, BBQ соус</p>
+                    <div class="card-button d-f align-items-center">
+                        <p>Цена: от <span>13</span> руб.</p>
+                        <button class="choose" data-p="fifteen">Выбрать</button>
+                    </div>
+                </div>
+                <div class="card media-card" data-p="sixteen">
+                    <p class="text-header text-align-center">Мексиканская</p>
+                    <img src="images/pizza/mexican.jpg" alt="mexican">
+                    <p class="info-pizza media-info-pizza">Пицца соус, сыр "Моцарелла", ветчина, пепперони, лук, маслины, огурцы, помидоры, перец черный</p>
+                    <div class="card-button d-f align-items-center">
+                        <p>Цена: от <span>12</span> руб.</p>
+                        <button class="choose" data-p="sixteen">Выбрать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- pizza-container-four -->
+    </main>
+    <footer class="footer media-one media-two">
+        <p class="text-align-center">Сайт сервиса доставки пиццы</p>
+        <address>ⒸDzmitry Peryshch, 2022. ✉ dzmiter2105@mail.ru, dzmiter2105@gmail.com.</address>
+    </footer>
+    <!-- footer -->
+    <script src="js/script.js"></script>
+    <script src="js/pop-up.js"></script>
+    <script src="js/pizza.js"></script>
+</body>
+</html>
